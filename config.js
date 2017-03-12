@@ -7,7 +7,7 @@ module.exports = {
 	// The bot's command prefix. The bot will recognize as command any message that begins with it.
 	// i.e: "-schedulebot foo" will trigger the command "foo",
 	//      whereas "ScheduleBot foo" will do nothing at all.
-	prefix:  "@288682883453812737", // Tip: If you use "<@YOUR_BOT_USER_ID>", you can have the prefix
+	prefix:  "--bot", // Tip: If you use "<@YOUR_BOT_USER_ID>", you can have the prefix
 	                         // be a mention to your bot.
 
 	// Admin app settings
@@ -39,14 +39,14 @@ module.exports = {
 	// MANAGE_MESSAGES - 	0x00002000
 	// More info: https://discordapp.com/developers/docs/topics/permissions
 	delete_after_reply: {
-		enabled: true,
+		enabled: false,
 		time: 60000, // In milliseconds
 	},
 
 	// If true, it will delete any message that is not a command from the master channel.
 	// Leave this on to keep your master channel tidy.
 	// This also requires the "manage messages" permission
-	disallow_talking: true
+	disallow_talking: false
 };
 
 // "Add to server" link:
